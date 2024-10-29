@@ -468,7 +468,7 @@
                     <version>${maven-surefire-plugin.version}</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>src/test/resources/suites/Sanity_ApplicationModule.xml</suiteXmlFile>
+                            <suiteXmlFile>src\test\resources\suites\citizens\Sanity_ApplicationModule.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <argLine>
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
