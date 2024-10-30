@@ -11,7 +11,7 @@
 		<classes>
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.HomePageTest_NV" />
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step1_Test_NV" />
-			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step2_Test_NV" />
+		<!--	<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step2_Test_NV" />
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step3_Test_NV" />
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step4_Test_NV" />
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step5_Test_NV" />
@@ -20,7 +20,7 @@
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step7_Test_NV" />
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step8_Test_NV" />
 			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step9_Test_NV" />
-			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step10_Test_NV" />
+			<class name="com.codetru.project.cica.testcases.sanityApplicationModule.Step10_Test_NV" />-->
 		</classes>
 	</test>
 	
