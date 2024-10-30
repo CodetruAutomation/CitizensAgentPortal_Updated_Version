@@ -53,7 +53,13 @@ public enum BrowserFactory {
 
             if (Boolean.valueOf(FrameworkConstants.HEADLESS) == true) {
                 options.addArguments("--headless=new");
+                options.addArguments("--disable-gpu"); // Disables GPU hardware acceleration (required in some environments)
+                options.addArguments("--disable-extensions"); // Disables extensions that might interfere
+                options.addArguments("--no-sandbox"); // Bypasses OS security model, required in CI environments like Docker
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--remote-allow-origins=*");
                 options.addArguments("window-size=1800,900");
+                
             }
 
             return options;

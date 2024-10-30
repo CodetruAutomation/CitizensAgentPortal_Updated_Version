@@ -49,11 +49,11 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     public static String methodName = "";
     
     public TestListener() {
-        try {
-            screenRecorder = new ScreenRecoderHelpers();
-        } catch (IOException | AWTException e) {
-            System.out.println(e.getMessage());
-        }
+//        try {
+//            screenRecorder = new ScreenRecoderHelpers();
+//        } catch (IOException | AWTException e) {
+//            System.out.println(e.getMessage());
+//        }
     }
 
     public String getTestName(ITestResult result) {
