@@ -19,7 +19,7 @@ public class EmailConfig {
     //send_email_to_users=yes
 
     public static final String SERVER = "smtp.gmail.com";
-    public static final String PORT = "465";
+    public static final String PORT = "587";
 
     public static final String FROM = "codetruteamlead@gmail.com";
     public static final String PASSWORD = "verc heik ibom uhig";
