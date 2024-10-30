@@ -82,7 +82,7 @@ import com.google.zxing.BinaryBitmap;
 import com.google.zxing.LuminanceSource;
 import com.google.zxing.MultiFormatReader;
 import com.google.zxing.Result;
-import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
+//import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
 
 import io.qameta.allure.Step;
@@ -435,35 +435,35 @@ public class WebUI {
 	 * @param an element of object type By
 	 * @return text of QR Code
 	 */
-	@Step("Get QR code from image {0}")
-	public static String getQRCodeFromImage(By by) {
-		String qrCodeURL = WebUI.getAttributeElement(by, "src");
-		//Create an object of URL Class
-		URL url = null;
-		try {
-			url = new URL(qrCodeURL);
-		} catch (MalformedURLException e) {
-			throw new RuntimeException(e);
-		}
-		//Pass the URL class object to store the file as image
-		BufferedImage bufferedimage = null;
-		try {
-			bufferedimage = ImageIO.read(url);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-		// Process the image
-		LuminanceSource luminanceSource = new BufferedImageLuminanceSource(bufferedimage);
-		BinaryBitmap binaryBitmap = new BinaryBitmap(new HybridBinarizer(luminanceSource));
-		//To Capture details of QR code
-		Result result = null;
-		try {
-			result = new MultiFormatReader().decode(binaryBitmap);
-		} catch (com.google.zxing.NotFoundException e) {
-			throw new RuntimeException(e);
-		}
-		return result.getText();
-	}
+//	@Step("Get QR code from image {0}")
+//	public static String getQRCodeFromImage(By by) {
+//		String qrCodeURL = WebUI.getAttributeElement(by, "src");
+//		//Create an object of URL Class
+//		URL url = null;
+//		try {
+//			url = new URL(qrCodeURL);
+//		} catch (MalformedURLException e) {
+//			throw new RuntimeException(e);
+//		}
+//		//Pass the URL class object to store the file as image
+//		BufferedImage bufferedimage = null;
+//		try {
+//			bufferedimage = ImageIO.read(url);
+//		} catch (IOException e) {
+//			throw new RuntimeException(e);
+//		}
+//		// Process the image
+//		LuminanceSource luminanceSource = new BufferedImageLuminanceSource(bufferedimage);
+//		BinaryBitmap binaryBitmap = new BinaryBitmap(new HybridBinarizer(luminanceSource));
+//		//To Capture details of QR code
+//		Result result = null;
+//		try {
+//			result = new MultiFormatReader().decode(binaryBitmap);
+//		} catch (com.google.zxing.NotFoundException e) {
+//			throw new RuntimeException(e);
+//		}
+//		return result.getText();
+//	}
 
 	//Handle HTML5 validation message and valid value
 
